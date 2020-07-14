@@ -1,0 +1,7 @@
+{
+  "name": "VIPApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
