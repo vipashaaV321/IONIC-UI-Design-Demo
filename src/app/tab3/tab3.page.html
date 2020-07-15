@@ -1,17 +1,168 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Design-tab 3
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-list-header>Icons</ion-list-header>
+<p>
+  <ion-chip outline color="primary">
+    <ion-icon name="pin"></ion-icon>
+    <ion-label>Madison</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-chip outline color="secondary">
+    <ion-icon name="wine"></ion-icon>
+    <ion-label>Nightlife</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-chip outline color="tertiary">
+    <ion-icon name="restaurant"></ion-icon>
+    <ion-label>Dining</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-chip outline color="dark">
+    <ion-icon name="videocam"></ion-icon>
+    <ion-label>Entertainment</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+</p>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-list-header>Colors</ion-list-header>
+<p>
+  <ion-chip color="primary">
+    <ion-label>Primary</ion-label>
+  </ion-chip>
+  <ion-chip color="secondary">
+    <ion-label>Secondary</ion-label>
+  </ion-chip>
+  <ion-chip color="tertiary">
+    <ion-label>Tertiary</ion-label>
+  </ion-chip>
+  <ion-chip color="success">
+    <ion-label>Success</ion-label>
+  </ion-chip>
+  <ion-chip color="warning">
+    <ion-label>Warning</ion-label>
+  </ion-chip>
+  <ion-chip color="danger">
+    <ion-label>Danger</ion-label>
+  </ion-chip>
+</p>
+
+<ion-list-header>Outline</ion-list-header>
+<p>
+  <ion-chip outline color="primary">
+    <ion-label>Primary</ion-label>
+  </ion-chip>
+  <ion-chip outline color="secondary">
+    <ion-label>Secondary</ion-label>
+  </ion-chip>
+  <ion-chip outline color="tertiary">
+    <ion-label>Tertiary</ion-label>
+  </ion-chip>
+  <ion-chip outline color="success">
+    <ion-label>Success</ion-label>
+  </ion-chip>
+  <ion-chip outline color="warning">
+    <ion-label>Warning</ion-label>
+  </ion-chip>
+  <ion-chip outline color="danger">
+    <ion-label>Danger</ion-label>
+  </ion-chip>
+</p>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Blueberry</ion-label>
+    <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Apple</ion-label>
+    <ion-toggle slot="start" name="apple" color="secondary" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Grape</ion-label>
+    <ion-toggle slot="start" name="grape" color="tertiary" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Kiwi</ion-label>
+    <ion-toggle slot="start" name="kiwi" color="success" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Orange</ion-label>
+    <ion-toggle slot="start" name="banana" color="warning" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cherry</ion-label>
+    <ion-toggle slot="start" name="cherry" color="danger" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Banana</ion-label>
+    <ion-toggle slot="start" name="banana" color="light" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cantaloupe</ion-label>
+    <ion-toggle slot="start" name="cantaloupe" color="medium" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Blackberry</ion-label>
+    <ion-toggle slot="start" name="blackberry" color="dark" checked></ion-toggle>
+  </ion-item>
+</ion-list>
+<ion-list>
+  <ion-list-header>
+    <ion-label>Default</ion-label>
+  </ion-list-header>
+  <ion-progress-bar></ion-progress-bar>
+</ion-list>
+
+<ion-list>
+  <ion-list-header>
+    <ion-label>Default at 50%</ion-label>
+  </ion-list-header>
+  <ion-progress-bar value="0.5"></ion-progress-bar>
+</ion-list>
+
+<ion-list>
+  <ion-list-header>
+    <ion-label>Color</ion-label>
+  </ion-list-header>
+
+  <!-- Progress Bar with Color -->
+  <ion-progress-bar color="secondary" value="0.5"></ion-progress-bar>
+  <ion-progress-bar color="tertiary" value="0.8"></ion-progress-bar>
+
+  <ion-list-header>
+    <ion-label>
+      Indeterminate
+    </ion-label>
+  </ion-list-header>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+
+  <ion-list-header>
+    <ion-label>
+      Indeterminate (reversed)
+    </ion-label>
+  </ion-list-header>
+  <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+
+  <ion-list-header>
+    <ion-label>
+      Buffer
+    </ion-label>
+  </ion-list-header>
+  <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+</ion-list>
 </ion-content>
